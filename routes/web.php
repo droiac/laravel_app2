@@ -27,3 +27,5 @@ Route::get('tentang', [BlogController::class, 'tentang']);
 Route::get('kontak', [BlogController::class, 'kontak']);
 
 Route::get('kariyawan', [KariyawanController::class, 'index']);
+Route::get('kariyawan/tambah', [KariyawanController::class, 'tambah']);
+Route::post('kariyawan/store', [KariyawanController::class, 'store']);
